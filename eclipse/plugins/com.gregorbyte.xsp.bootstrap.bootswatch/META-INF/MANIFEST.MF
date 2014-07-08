@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bootstrap4Xpages Cosmo Bootswatch
+Bundle-SymbolicName: com.gregorbyte.xsp.bootstrap.bootswatch;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Cameron Gregor
+Fragment-Host: org.openntf.xsp.bootstrap;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

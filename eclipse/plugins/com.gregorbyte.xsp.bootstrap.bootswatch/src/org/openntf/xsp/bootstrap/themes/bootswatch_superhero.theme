@@ -1,0 +1,9 @@
+<theme extends="bootstrapv3.1.1">
+	
+	<!-- Bootswatch CSS files -->
+	<resource>
+		<content-type>text/css</content-type>
+		<href>/.ibmxspres/.extlib/bootstrap/bootswatch311/superhero/bootstrap.min.css</href>
+	</resource>
+
+</theme>

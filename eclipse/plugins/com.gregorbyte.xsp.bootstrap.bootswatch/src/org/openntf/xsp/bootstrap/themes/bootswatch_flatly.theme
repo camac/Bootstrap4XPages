@@ -1,0 +1,11 @@
+<theme extends="bootstrapv3.1.1">
+
+	<!-- All the resources are defined here to ensure that they are loaded in order -->
+	
+    <!-- Core Bootstrap CSS files -->
+	<resource>
+		<content-type>text/css</content-type>
+		<href>/.ibmxspres/.extlib/bootstrap/bootswatch311/flatly/bootstrap.css</href>
+	</resource>
+
+</theme>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.gregorbyte.xsp.bootstrap.bootswatch.feature"
+      label="Gregorbyte Bootswatch Feature"
+      version="1.0.0.qualifier"
+      provider-name="Cameron Gregor">
+
+   <description url="http://www.example.com/description">
+      This feature is solely for the Bootswatch fragment bundle which
+contributes bootswatch css and themes to the Bootstrap plugin
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="com.gregorbyte.xsp.bootstrap.bootswatch"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+</feature>
