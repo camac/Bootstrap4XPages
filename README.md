@@ -69,6 +69,25 @@ This library is delivered under the Apache 2.0 license. A compiled, ready to use
 <h3>Known Limitations</h3>
 The components provided by the library are currently not matching the IBM standard in term of localization (support for multiple languages, bibi support) or accessibity.
 
+<h3>Setting your Application to use Bootstrap</h3>
+
+Unfortunately the bootstrap themes do not show up for selection in the Xsp Properties drop-down box.
+To activate a bootstrap theme, you can type in the theme name manually.
+
+<h4>Currently Available Themes</h4>
+
+* bootstrapv3.1.1
+* bootstrapv3.1.1_3d
+* bootstrapv3.0.0
+* bootstrapv3.0.0_3d
+* bootstrapv3_base
+* bootstrapv2.3.2
+* bootstrapv2.3.2r
+* bootstrapv2_base
+* bootstrapv3
+* bootstrapv2
+* bootstrap
+
 <h3>And what's next?</h3>
 Well, many things can be done! Now that the bulk of the code is there, I'm seeking help from the community to extend this library, or build on top of it. Feel free to fork the code and create your additions. Then get them integrated within the core project, if it makes sense. We'll accept external contributions to this library after having the code properly reviewed.</br>
 Bellow is a initial set of ideas, but please come with yours!</br>
