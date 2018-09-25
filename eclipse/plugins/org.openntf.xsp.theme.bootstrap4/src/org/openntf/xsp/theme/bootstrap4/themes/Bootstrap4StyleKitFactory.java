@@ -19,15 +19,18 @@ import java.io.InputStream;
 
 public class Bootstrap4StyleKitFactory implements com.ibm.xsp.stylekit.StyleKitFactory, com.ibm.xsp.stylekit.StyleKitListFactory {
 
+	public static final String THEME_FOLDER_PATH = "org/openntf/xsp/theme/bootstrap4/themes";
+	
+	public static final String THEME_BOOTSTRAP4 = "Bootstrap4XPages_v4";
+	
     public Bootstrap4StyleKitFactory() {
     }
 
     @Override
     public InputStream getThemeAsStream(String themeId, int scope) {
         if (scope == Bootstrap4StyleKitFactory.STYLEKIT_GLOBAL) {
-            String folderPath = "com/ibm/xsp/extlibx/theme/bootstrap4/themes"; //$NON-NLS-1$
-            if (themeId.equalsIgnoreCase("Bootstrap4")) { //$NON-NLS-1$
-                return getThemeFromBundle(folderPath + "/Bootstrap4.theme"); //$NON-NLS-1$
+            if (themeId.equalsIgnoreCase(THEME_BOOTSTRAP4)) { //$NON-NLS-1$
+                return getThemeFromBundle(THEME_FOLDER_PATH + "/Bootstrap4XPages_v4.theme"); //$NON-NLS-1$
             }
         }
         return null;
@@ -47,7 +50,7 @@ public class Bootstrap4StyleKitFactory implements com.ibm.xsp.stylekit.StyleKitF
     @Override
     public String[] getThemeIds(){
         return new String[]{
-            "Bootstrap4" // $NON-NLS-1$
+            THEME_BOOTSTRAP4 // $NON-NLS-1$
         };
     }
 }
