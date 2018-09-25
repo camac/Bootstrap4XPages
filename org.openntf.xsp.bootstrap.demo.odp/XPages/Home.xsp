@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
-	HEY THERE
-aoeuaoeu
 
+	<bx:container id="container1">
+		<bx:row id="row1">
+			<bx:column id="column1">
+			</bx:column>
+			<bx:column id="column2">
+			</bx:column>
+			<bx:column id="column3">
+			</bx:column>
+		</bx:row>
+		<bx:row id="row2">
+			<bx:column id="column4">
+			</bx:column>
+			<bx:column id="column5">
+			</bx:column>
+			<bx:column id="column6">
+			</bx:column>
+		</bx:row>
+	</bx:container>
 
 </xp:view>
