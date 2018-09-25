@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.ibm.designer.domino.xsp.editor.component">
+      <components
+            id="Bootstrap"
+            name="Bootstrap"
+            panelsFactory="org.openntf.xsp.bootstrap.designer.tooling.panels.core.BootstrapPanelsFactory"
+            schemaUri="http://www.openntf.org/xsp/bootstrap">
+         <component
+               tagName="row"
+               visualizationFactory="com.jord.hapi.xsp.designer.tooling.visualizations.containers.BootstrapRowVisualizer">
+            <paletteItem
+                  description="Bootstrap Layout Row"
+                  iconLarge="images/palette/layout/row-24.png"
+                  iconSmall="images/palette/layout/row-16.png"
+                  label="Row"
+                  visible="true">
+            </paletteItem>
+         </component>
+         <component
+               tagName="column"
+               visualizationFactory="com.jord.hapi.xsp.designer.tooling.visualizations.containers.BootstrapColumnVisualizer">
+            <panels>
+               <panel
+                     id="column.basics.panel"
+                     title="Bootstrap Column">
+               </panel>
+            </panels>
+            <paletteItem
+                  description="Bootstrap Layout Column"
+                  iconLarge="images/palette/layout/column-24.png"
+                  iconSmall="images/palette/layout/column-16.png"
+                  label="Column"
+                  visible="true">
+            </paletteItem>
+         </component>
+         <component
+               tagName="container">
+            <panels>
+               <panel
+                     id="container.basics.panel"
+                     title="Bootstrap Container">
+               </panel>
+            </panels>
+            <paletteItem
+                  description="Bootstrap Layout Container"
+                  iconLarge="images/palette/layout/container-24.png"
+                  iconSmall="images/palette/layout/container-16.png"
+                  label="Container"
+                  visible="true">
+            </paletteItem>
+         </component>
+      </components>
+   </extension>
+
+</plugin>
