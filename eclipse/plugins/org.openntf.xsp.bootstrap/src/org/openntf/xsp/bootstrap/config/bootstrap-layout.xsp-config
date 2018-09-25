@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+
+	<faces-config-extension>
+		<namespace-uri>http://www.openntf.org/xsp/bootstrap</namespace-uri>
+		<default-prefix>bx</default-prefix>
+	</faces-config-extension>
+
+	<component>
+
+		<description>Bootstrap Container</description>
+		<display-name>Bootstrap Container</display-name>
+		<component-type>org.openntf.xsp.bootstrap.component.layout.UIContainer</component-type>
+		<component-class>org.openntf.xsp.bootstrap.component.layout.UIContainer</component-class>
+
+		<property>
+			<description>Container is Fluid Layout</description>
+			<display-name>Fluid Layout</display-name>
+			<property-name>fluid</property-name>
+			<property-class>boolean</property-class>
+			<property-extension>
+				<designer-extension>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<component-extension>
+
+			<base-component-type>com.ibm.xsp.Panel</base-component-type>
+
+			<component-family>javax.faces.Panel</component-family>
+
+			<tag-name>container</tag-name>
+
+			<designer-extension>
+				<in-palette>true</in-palette>
+				<category>Bootstrap Layout</category>
+			</designer-extension>
+
+		</component-extension>
+
+	</component>
+
+	<component>
+
+		<description>Bootstrap Row</description>
+		<display-name>Bootstrap Row</display-name>
+		<component-type>org.openntf.xsp.bootstrap.component.layout.UIRow</component-type>
+		<component-class>org.openntf.xsp.bootstrap.component.layout.UIRow</component-class>
+
+		<property>
+			<description>Vertical Alignment of Columns</description>
+			<display-name>Vertical Alignment</display-name>
+			<property-name>verticalAlign</property-name>
+			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<designer-extension>
+					<editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+					<editor-parameter>
+						top
+						middle
+						bottom
+					</editor-parameter>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<component-extension>
+
+			<base-component-type>com.ibm.xsp.Panel</base-component-type>
+
+			<component-family>javax.faces.Panel</component-family>
+
+			<tag-name>row</tag-name>
+
+			<designer-extension>
+				<in-palette>true</in-palette>
+				<category>Bootstrap Layout</category>
+			</designer-extension>
+
+		</component-extension>
+
+	</component>
+
+	<component>
+
+		<description>Bootstrap Column</description>
+		<display-name>Bootstrap Column</display-name>
+		<component-type>org.openntf.xsp.bootstrap.component.layout.UIColumn</component-type>
+		<component-class>org.openntf.xsp.bootstrap.component.layout.UIColumn</component-class>
+
+		<property>
+			<description>Adds an Alignment class to the column </description>
+			<display-name>Alignment</display-name>
+			<property-name>align</property-name>
+			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<designer-extension>
+					<editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+					<editor-parameter>
+						left
+						center
+						right
+					</editor-parameter>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<property>
+			<description>Number of Columns to Span (Medium Screen size). Leave blank for auto calculation</description>
+			<display-name>Columns to Span</display-name>
+			<property-name>columns</property-name>
+			<property-class>java.lang.Integer</property-class>
+			<property-extension>
+				<allow-run-time-binding>true</allow-run-time-binding>
+				<designer-extension>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<component-extension>
+
+			<base-component-type>com.ibm.xsp.Panel
+			</base-component-type>
+
+			<component-family>javax.faces.Panel
+			</component-family>
+
+			<tag-name>column</tag-name>
+
+			<designer-extension>
+				<in-palette>true</in-palette>
+				<category>Bootstrap Layout</category>
+			</designer-extension>
+
+		</component-extension>
+
+	</component>
+
+</faces-config>
