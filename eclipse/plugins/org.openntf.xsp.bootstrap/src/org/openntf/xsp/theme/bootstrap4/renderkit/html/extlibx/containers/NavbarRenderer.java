@@ -22,6 +22,7 @@ package org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.containers;
 
 import java.io.IOException;
 
+import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
@@ -44,7 +45,22 @@ public class NavbarRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.e
     //     this renderer. They make the BS3 NavbarRenderer more extensible. They need to be
     //     delivered before this version of the BS4 renderer can be released.
     
+    public NavbarRenderer() {
+		super();
+		System.out.println("Created a NavBar renderer");
+	}
+
+	
     @Override
+	public void encodeBegin(FacesContext context, UIComponent component) throws IOException {
+
+    	System.out.println("Encode Begin");
+    	
+		super.encodeBegin(context, component);
+	}
+
+
+	@Override
     protected Object getProperty(int prop) {
         switch(prop) {
             // Container div
@@ -69,7 +85,7 @@ public class NavbarRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.e
         return super.getProperty(prop);
     }
     
-    protected void writeHeading(FacesContext context, ResponseWriter w, UINavbar c, boolean linksExist) throws IOException {
+	protected void writeHeading(FacesContext context, ResponseWriter w, UINavbar c, boolean linksExist) throws IOException {
         if(linksExist) {
             writeCollapsedLink(context, w, c);
         }

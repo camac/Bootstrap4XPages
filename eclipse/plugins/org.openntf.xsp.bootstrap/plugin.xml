@@ -10,4 +10,8 @@
          <service type="com.ibm.xsp.stylekit.StyleKitFactory" class="org.openntf.xsp.bootstrap.themes.BootstrapStyleKitFactory" />
    </extension>
 
+   <extension point="com.ibm.commons.Extension">
+         <service type="com.ibm.xsp.stylekit.StyleKitFactory" class="org.openntf.xsp.theme.bootstrap4.themes.Bootstrap4StyleKitFactory" />
+   </extension>
+
 </plugin>

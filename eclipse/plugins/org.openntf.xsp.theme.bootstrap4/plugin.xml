@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.4"?>
-<plugin>
-   <extension point="com.ibm.commons.Extension">
-         <service type="com.ibm.xsp.stylekit.StyleKitFactory" class="org.openntf.xsp.theme.bootstrap4.themes.Bootstrap4StyleKitFactory" />
-   </extension>
-</plugin>

@@ -15,8 +15,6 @@
 
 	<modules>
 		<module>org.openntf.xsp.bootstrap</module>
-		<module>org.openntf.xsp.theme.bootstrap4</module>
-<!-- 		<module>org.openntf.xsp.bootstrap.designer.tooling</module> -->
 	</modules>
 
 </project>

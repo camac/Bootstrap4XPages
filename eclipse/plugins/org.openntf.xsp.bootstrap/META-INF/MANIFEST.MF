@@ -17,8 +17,10 @@ Require-Bundle: org.eclipse.core.runtime,
  com.ibm.designer.runtime.acl,
  com.ibm.designer.runtime.directory
 Export-Package: org.openntf.xsp.bootstrap.component,
+ org.openntf.xsp.bootstrap.component.container,
  org.openntf.xsp.bootstrap.component.layout,
  org.openntf.xsp.bootstrap.components.layout,
+ org.openntf.xsp.bootstrap.config,
  org.openntf.xsp.bootstrap.library,
  org.openntf.xsp.bootstrap.minifier,
  org.openntf.xsp.bootstrap.renderkit.html_extended.extlib,
@@ -36,7 +38,21 @@ Export-Package: org.openntf.xsp.bootstrap.component,
  org.openntf.xsp.bootstrap.renderkit.html_extended.extlib.util,
  org.openntf.xsp.bootstrap.resources,
  org.openntf.xsp.bootstrap.themes,
- org.openntf.xsp.bootstrap.util
+ org.openntf.xsp.bootstrap.util,
+ org.openntf.xsp.theme.bootstrap4,
+ org.openntf.xsp.theme.bootstrap4.config,
+ org.openntf.xsp.theme.bootstrap4.minifier,
+ org.openntf.xsp.theme.bootstrap4.plugin,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.containers,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.containers.tree,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.data,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.layout,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.layout.tree,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.outline,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.outline.tree,
+ org.openntf.xsp.theme.bootstrap4.renderkit.html.extlibx.util,
+ org.openntf.xsp.theme.bootstrap4.resources,
+ org.openntf.xsp.theme.bootstrap4.themes
 Bundle-Activator: org.openntf.xsp.bootstrap.library.BootstrapActivator
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
