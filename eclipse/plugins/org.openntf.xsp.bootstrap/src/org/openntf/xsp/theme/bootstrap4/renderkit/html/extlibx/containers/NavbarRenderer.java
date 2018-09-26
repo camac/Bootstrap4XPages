@@ -85,6 +85,7 @@ public class NavbarRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.e
         return super.getProperty(prop);
     }
     
+	@Override
 	protected void writeHeading(FacesContext context, ResponseWriter w, UINavbar c, boolean linksExist) throws IOException {
         if(linksExist) {
             writeCollapsedLink(context, w, c);
@@ -135,7 +136,8 @@ public class NavbarRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.e
         w.endElement("div"); // $NON-NLS-1$
     }
     
-    protected void writeBeforeLinks(FacesContext context, ResponseWriter w, UINavbar c, ITree beforeLinks) throws IOException {
+    @Override
+	protected void writeBeforeLinks(FacesContext context, ResponseWriter w, UINavbar c, ITree beforeLinks) throws IOException {
         if(null != beforeLinks) {
             AbstractTreeRenderer renderer = new NavbarLinksRenderer(NavbarLinksRenderer.POSITION_LEFT);
             if (renderer != null) {
@@ -144,7 +146,8 @@ public class NavbarRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.e
         }
     }
     
-    protected void writeAfterLinks(FacesContext context, ResponseWriter w, UINavbar c, ITree afterLinks) throws IOException {
+    @Override
+	protected void writeAfterLinks(FacesContext context, ResponseWriter w, UINavbar c, ITree afterLinks) throws IOException {
         if(null != afterLinks) {
             AbstractTreeRenderer renderer = new NavbarLinksRenderer(NavbarLinksRenderer.POSITION_RIGHT);
             if (renderer != null) {
@@ -153,7 +156,8 @@ public class NavbarRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.e
         }
     }
     
-    protected void writeCollapsedLink(FacesContext context, ResponseWriter w, UINavbar c) throws IOException {
+    @Override
+	protected void writeCollapsedLink(FacesContext context, ResponseWriter w, UINavbar c) throws IOException {
         String dataTargetClass = "." + JavaScriptUtil.encodeFunctionName(context, c, "collapse-target"); //$NON-NLS-1$ //$NON-NLS-2$
         w.startElement("button", c); // $NON-NLS-1$
         w.writeAttribute("type",  "button",  null); // $NON-NLS-1$ $NON-NLS-2$

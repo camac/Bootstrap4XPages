@@ -68,7 +68,8 @@ public class NavRenderer extends com.ibm.xsp.theme.bootstrap.renderkit.html.extl
     }
     
     //TODO method from superclass, change package visibility?
-    protected boolean makeSelectedActive(TreeContextImpl tree) {
+    @Override
+	protected boolean makeSelectedActive(TreeContextImpl tree) {
         return tree.getDepth()<=2;
     }
 

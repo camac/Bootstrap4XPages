@@ -51,7 +51,8 @@ public class SimpleResponsiveLayoutRenderer extends com.ibm.xsp.theme.bootstrap.
         return super.getProperty(prop);
     }
     
-    protected void writeLeftColumn(FacesContext context, ResponseWriter w, UIApplicationLayout c, SimpleResponsiveApplicationConfiguration configuration, 
+    @Override
+	protected void writeLeftColumn(FacesContext context, ResponseWriter w, UIApplicationLayout c, SimpleResponsiveApplicationConfiguration configuration, 
             boolean collapseLeftColumn, String collapseLeftTarget, String collapseLeftButtonLabel) throws IOException {
         
         UIComponent left = c.getLeftColumn();
