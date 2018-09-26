@@ -17,13 +17,6 @@
    </license>
 
    <plugin
-         id="org.openntf.xsp.theme.bootstrap4"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.openntf.xsp.bootstrap.designer.tooling"
          download-size="0"
          install-size="0"

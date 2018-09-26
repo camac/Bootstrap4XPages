@@ -20,27 +20,27 @@
 */
 package org.openntf.xsp.theme.bootstrap4.config;
 
-import com.ibm.xsp.extlib.config.ExtlibPluginConfig;
+import org.openntf.xsp.bootstrap.library.BootstrapFragment;
 
 /**
  *
  * @author Brian Gleeson (brian.gleeson@ie.ibm.com)
  */
-public class Bootstrap4Config extends ExtlibPluginConfig {
+public class Bootstrap4Config extends BootstrapFragment {
 	public Bootstrap4Config() {
 	}
-	
-	@Override
-	public String[] getXspConfigFiles(String[] files) {
-        return concat(files, new String[] {
-            "com/ibm/xsp/extlibx/theme/bootstrap4/config/extlibx-bootstrap4.xsp-config" // $NON-NLS-1$
-        });
-	}	
 
 	@Override
-    public String[] getFacesConfigFiles(String[] files) {
-        return concat(files, new String[] {
-            "com/ibm/xsp/extlibx/theme/bootstrap4/config/extlibx-bootstrap4-faces-config.xml" // $NON-NLS-1$
-        });
-    }
+	public String[] getXspConfigFiles(String[] files) {
+		return concat(files, new String[] { 
+				"org/openntf/xsp/theme/bootstrap4/config/bootstrap4.xsp-config" // $NON-NLS-1$
+		});
+	}
+
+	@Override
+	public String[] getFacesConfigFiles(String[] files) {
+		return concat(files, new String[] { 
+				"org/openntf/xsp/theme/bootstrap4/config/bootstrap4-faces-config.xml" // $NON-NLS-1$
+		});
+	}
 }

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap" xmlns:xe="http://www.ibm.com/xsp/coreex">
-	HI there
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap" xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
 
-	<xe:navbar id="navbar1" headingText="Hi THer" rendererType="org.openntf.xsp.theme.bootstrap4.components.responsive.Navbar">
-		<xe:this.navbarBeforeLinks>
-			<xe:pageTreeNode page="/Home.xsp" label="Home"></xe:pageTreeNode>
-			<xe:pageTreeNode label="Core Controls" page="/CoreControls.xsp"></xe:pageTreeNode>
-		</xe:this.navbarBeforeLinks>
-	</xe:navbar>
+	<xc:ccMainNavBar></xc:ccMainNavBar>
 
 	<bx:container id="container1">
 		<bx:row id="row1">

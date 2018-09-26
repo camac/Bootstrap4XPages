@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap" xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+
+	<xe:navbar id="navbar1" headingText="Bootstrap4XPages Demo Database">
+		<xe:this.navbarBeforeLinks>
+			<xe:pageTreeNode page="/Home.xsp" label="Home"></xe:pageTreeNode>
+			<xe:pageTreeNode label="Core Controls" page="/CoreControls.xsp"></xe:pageTreeNode>
+			<xe:pageTreeNode label="New Controls" page="/CoreControls.xsp">
+				<xe:this.children>
+					<xe:pageTreeNode label="Pretty Print" page="/PrettyPrint.xsp"></xe:pageTreeNode>
+				</xe:this.children>
+			</xe:pageTreeNode>
+
+		</xe:this.navbarBeforeLinks>
+	</xe:navbar>
+
+</xp:view>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap" xmlns:xc="http://www.ibm.com/xsp/custom">
 
+	<xc:ccMainNavBar></xc:ccMainNavBar>
+
 	<bx:container id="container1">
 		<xc:ccCoreControls></xc:ccCoreControls>
 	</bx:container>
+	
 </xp:view>

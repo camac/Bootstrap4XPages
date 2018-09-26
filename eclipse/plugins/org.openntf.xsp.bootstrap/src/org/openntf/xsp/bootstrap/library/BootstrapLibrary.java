@@ -20,6 +20,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import org.openntf.xsp.theme.bootstrap4.config.Bootstrap4Config;
+
 import com.ibm.commons.extension.ExtensionManager;
 import com.ibm.xsp.library.AbstractXspLibrary;
 
@@ -97,6 +99,9 @@ public class BootstrapLibrary extends AbstractXspLibrary {
             // so the fragment ordering is deterministic - the 
             // default random ordering was making JUnit test fail 
             // orderings un-repeatable.
+            
+            frags.add(new Bootstrap4Config());
+            
             Collections.sort(frags, new Comparator<BootstrapFragment>() {
                 @Override
 				public int compare(BootstrapFragment o1, BootstrapFragment o2) {

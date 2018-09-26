@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.resources>
+		<xp:script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" clientSide="true"></xp:script>
+	</xp:this.resources>
+	
+	<xc:ccMainNavBar></xc:ccMainNavBar>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="display-3">Pretty Print</h1>
+			<p>The Pretty print control allows you to display highlighted source code for many different languages</p>
+			<p>You can find the pretty print control in heavy use within this Demonstration Database</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Simple usage</h3>
+				<p>In it's simplest usage, the pretty print control will just work on whatever is between the open and closing tags of the control</p>
+
+				<bx:prettyPrint id="prettyPrint3" languageHint="javascript">function foo() { return "bar?"; }</bx:prettyPrint>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Show Contents of an XPage or Custom Control</h3>
+				<p>The Pretty Print control has a property called 'pageName' which you can use to specify an XPage or Custom Control</p>
+				<p>It will then output the contents of that page/custom control. Here it is showing the contents of this page.</p>
+
+				<h5>XPage Markup</h5>
+				<bx:prettyPrint id="prettyPrint2" pageName="PrettyPrint.xsp"></bx:prettyPrint>
+
+			</div>
+		</div>
+
+	</div>
+
+</xp:view>
