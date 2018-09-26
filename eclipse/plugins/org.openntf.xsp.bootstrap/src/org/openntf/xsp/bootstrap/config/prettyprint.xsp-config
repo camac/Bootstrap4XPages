@@ -2,8 +2,11 @@
 <faces-config>
 
 	<faces-config-extension>
-		<namespace-uri>http://www.ibm.com/xsp/coreex</namespace-uri>
-		<default-prefix>xe</default-prefix>
+		<namespace-uri>http://www.openntf.org/xsp/bootstrap</namespace-uri>
+		<default-prefix>bx</default-prefix>
+		<designer-extension>
+			<control-subpackage-name>select2</control-subpackage-name>
+		</designer-extension>
 	</faces-config-extension>
 
 	<component>
@@ -11,8 +14,8 @@
 		<description>A control that displays the Pretty Printed Source Code</description>
 		<display-name>Pretty Print</display-name>
 
-		<component-type>com.ibm.xsp.extlibx.UIPrettyPrint</component-type>
-		<component-class>com.ibm.xsp.extlibx.component.container.UIPrettyPrint</component-class>
+		<component-type>org.openntf.xsp.bootstrap.component.container.UIPrettyPrint</component-type>
+		<component-class>org.openntf.xsp.bootstrap.component.container.UIPrettyPrint</component-class>
 
 		<property>
 			<description>The name of the Page or Custom Control to show contents of</description>
