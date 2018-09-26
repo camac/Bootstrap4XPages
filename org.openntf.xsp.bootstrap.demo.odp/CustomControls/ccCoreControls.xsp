@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<bx:row id="row1">
+		<bx:column id="column1">
+
+			<xp:inputText id="inputText1"></xp:inputText>
+			<xp:inputRichText id="inputRichText1"></xp:inputRichText>
+			<xp:inputTextarea id="inputTextarea1"></xp:inputTextarea>
+			<xp:button value="Label" id="button1"></xp:button>
+
+			<xp:listBox id="listBox1"></xp:listBox>
+
+			<xp:comboBox id="comboBox1"></xp:comboBox>
+			<xp:checkBox text="Label" id="checkBox1"></xp:checkBox>
+			<xp:radio text="Label" id="radio1"></xp:radio>
+			<xp:checkBoxGroup id="checkBoxGroup1"></xp:checkBoxGroup>
+			<xp:radioGroup id="radioGroup1"></xp:radioGroup>
+			<xp:link escape="true" text="Link" id="link1"></xp:link>
+			<xp:label value="Label" id="label1"></xp:label>
+			<xp:text escape="true" id="computedField1"></xp:text>
+			<xp:image url="" id="image1"></xp:image>
+			<xp:fileUpload id="fileUpload1"></xp:fileUpload>
+			<xp:fileDownload rows="30" id="fileDownload1" displayLastModified="false"></xp:fileDownload>
+			<xp:inputText id="inputText2">
+				<xp:dateTimeHelper id="dateTimeHelper1"></xp:dateTimeHelper>
+				<xp:this.converter>
+					<xp:convertDateTime type="date"></xp:convertDateTime>
+				</xp:this.converter>
+			</xp:inputText>
+
+			<xp:message id="message1" for="inputText1"></xp:message>
+			<xp:messages id="messages1"></xp:messages>
+			<xp:pager layout="Previous Group Next" partialRefresh="true" id="pager1"></xp:pager>
+
+
+		</bx:column>
+	</bx:row>
+
+</xp:view>
