@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+
+	<faces-config-extension>
+		<namespace-uri>http://www.openntf.org/xsp/bootstrap</namespace-uri>
+		<default-prefix>bx</default-prefix>
+	</faces-config-extension>
+
+	<component>
+
+		<description>Bootstrap Jumbotron</description>
+		<display-name>Bootstrap Jumbotron</display-name>
+		<component-type>org.openntf.xsp.bootstrap.component.container.UIJumbotron</component-type>
+		<component-class>org.openntf.xsp.bootstrap.component.container.UIJumbotron</component-class>
+
+		<property>
+			<description>Main Heading Title Text to Display</description>
+			<display-name>Heading</display-name>
+			<property-name>heading</property-name>
+			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<designer-extension>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<property>
+			<description>Sub Heading Text to Display</description>
+			<display-name>subHeading</display-name>
+			<property-name>subHeading</property-name>
+			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<designer-extension>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<property>
+			<description>Container is Fluid Layout</description>
+			<display-name>Fluid Layout</display-name>
+			<property-name>fluid</property-name>
+			<property-class>boolean</property-class>
+			<property-extension>
+				<designer-extension>
+					<category>basics</category>
+				</designer-extension>
+			</property-extension>
+		</property>
+
+		<component-extension>
+
+			<base-component-type>com.ibm.xsp.Panel</base-component-type>
+
+			<component-family>javax.faces.Panel</component-family>
+
+			<tag-name>jumbotron</tag-name>
+
+			<designer-extension>
+				<in-palette>true</in-palette>
+				<category>Bootstrap Layout</category>
+			</designer-extension>
+
+		</component-extension>
+
+	</component>
+
+</faces-config>
