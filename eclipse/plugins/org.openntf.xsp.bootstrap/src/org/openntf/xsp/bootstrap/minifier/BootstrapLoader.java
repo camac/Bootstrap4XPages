@@ -52,6 +52,7 @@ public class BootstrapLoader extends ExtLibLoaderExtension {
         /// ALIASES
         if(aliases!=null) {
         	// CAREFULLY MAKE SURE THAT THERE IS NO CONFLICT WITH ANOTHER LIBRARY
+            aliases.put("@Xa","extlib.dijit.MasterCheckbox"); //$NON-NLS-1$ //$NON-NLS-2$
         }
         
         /// PREFIXES

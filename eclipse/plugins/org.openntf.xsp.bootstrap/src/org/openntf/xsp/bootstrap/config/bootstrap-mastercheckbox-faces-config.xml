@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+
+	<render-kit>
+
+		<renderer>
+			<component-family>javax.faces.SelectMany</component-family>
+			<renderer-type>org.openntf.xsp.bootstrap.MasterCheckbox</renderer-type>
+			<renderer-class>org.openntf.xsp.bootstrap.renderkit.html_extended.extlib.form.MasterCheckboxRenderer</renderer-class>
+		</renderer>
+
+		<renderer>
+			<component-family>javax.faces.Input</component-family>
+			<renderer-type>org.openntf.xsp.bootstrap.SlaveCheckbox</renderer-type>
+			<renderer-class>org.openntf.xsp.bootstrap.renderkit.html_extended.extlib.form.SlaveCheckboxRenderer</renderer-class>
+		</renderer>
+
+	</render-kit>
+
+</faces-config>

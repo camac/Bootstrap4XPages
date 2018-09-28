@@ -21,6 +21,8 @@ import org.openntf.xsp.bootstrap.util.BootstrapUtil;
 import com.ibm.designer.runtime.Version;
 import com.ibm.xsp.context.FacesContextEx;
 import com.ibm.xsp.resource.DojoModuleResource;
+import com.ibm.xsp.resource.ScriptResource;
+import com.ibm.xsp.resource.StyleSheetResource;
 
 /**
  * Shared Bootstrap resources.
@@ -75,6 +77,13 @@ public abstract class BootstrapResources {
     public static final DojoModuleResource bootstrapPickerName = new DojoModuleResource("extlib.dijit.BootstrapPickerName"); // $NON-NLS-1$
     public static final DojoModuleResource bootstrapPickerName3 = new DojoModuleResource("extlib.dijit.BootstrapPickerName3"); // $NON-NLS-1$
     public static final DojoModuleResource bootstrapPickerSelect2 = new DojoModuleResource("extlib.dijit.BootstrapPickerSelect2"); // $NON-NLS-1$
+    
+    public static final DojoModuleResource dijitMasterCheckbox = new DojoModuleResource("dijit.form.MasterCheckbox");
+    public static final DojoModuleResource extlibMasterCheckbox = new DojoModuleResource("extlib.dijit.MasterCheckbox"); // $NON-NLS-1$
+    
+    public static final ScriptResource extlibPrettify = new ScriptResource("/.ibmxspres/.extlib/google-code-prettify/prettify.js", true);
+    public static final StyleSheetResource extlibPrettifyCss = new StyleSheetResource("/.ibmxspres/.extlib/google-code-prettify/prettify.css");
+ 
     
     public BootstrapResources() {
         this.BLANK_GIF      				  = "/.ibmxspres/.extlib/bootstrap/icons/blank.gif"; // $NON-NLS-1$

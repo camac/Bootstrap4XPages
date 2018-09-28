@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.8" replicaid="CA2582E90043BAE4" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="18e" sequence="4" unid="DDC7A65EBED6A80FCA258316003068BC">
+<created><datetime>20180928T184845,40+10</datetime></created>
+<modified><datetime>20180928T184845,97+10</datetime></modified>
+<revised><datetime>20180928T184845,96+10</datetime></revised>
+<lastaccessed><datetime>20180928T184845,97+10</datetime></lastaccessed>
+<addedtofile><datetime>20180928T184845,42+10</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Cameron Gregor/O=JORD Engineers</name></updatedby>
+<wassignedby><name>CN=Cameron Gregor/O=JORD Engineers</name></wassignedby>
+<item name="$TITLE"><text>ccFormGrid.xsp</text></item>
+<item name="$Flags"><text>gC~4;</text></item>
+
+
+<item name="$FileNames" sign="true"><text>ccFormGrid.xsp</text></item>
+
+</note>
