@@ -3,7 +3,9 @@ package org.openntf.xsp.bootstrap.component.layout;
 import javax.faces.context.FacesContext;
 import javax.faces.el.ValueBinding;
 
+import com.ibm.commons.util.StringUtil;
 import com.ibm.xsp.component.UIPanelEx;
+import com.ibm.xsp.extlib.util.ExtLibUtil;
 
 public class UIContainer extends UIPanelEx {
 
@@ -31,6 +33,21 @@ public class UIContainer extends UIPanelEx {
 
 	public void setFluid(Boolean fluid) {
 		this.fluid = fluid;
+	}
+
+	@Override
+	public String getStyleClass() {
+
+		String styleClass = super.getStyleClass();
+
+		if (isFluid()) {
+			styleClass = ExtLibUtil.concatStyleClasses(styleClass, "container-fluid");
+		} else {
+			styleClass = ExtLibUtil.concatStyleClasses(styleClass, "container");
+		}
+
+		return styleClass;
+
 	}
 
 	@Override
