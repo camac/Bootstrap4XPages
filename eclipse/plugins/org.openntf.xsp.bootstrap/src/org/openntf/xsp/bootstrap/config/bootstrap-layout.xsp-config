@@ -36,6 +36,7 @@
 			<designer-extension>
 				<in-palette>true</in-palette>
 				<category>Bootstrap Layout</category>
+				<generate-id>false</generate-id>
 			</designer-extension>
 
 		</component-extension>
@@ -63,6 +64,7 @@
 						bottom
 					</editor-parameter>
 					<category>basics</category>
+
 				</designer-extension>
 			</property-extension>
 		</property>
@@ -78,6 +80,7 @@
 			<designer-extension>
 				<in-palette>true</in-palette>
 				<category>Bootstrap Layout</category>
+				<generate-id>false</generate-id>
 			</designer-extension>
 
 		</component-extension>
@@ -135,6 +138,7 @@
 			<designer-extension>
 				<in-palette>true</in-palette>
 				<category>Bootstrap Layout</category>
+				<generate-id>false</generate-id>
 			</designer-extension>
 
 		</component-extension>
