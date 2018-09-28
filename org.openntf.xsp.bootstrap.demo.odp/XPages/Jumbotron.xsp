@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+	<xc:ccMainNavBar></xc:ccMainNavBar>
+
+	<bx:jumbotron id="jumbotron1" heading="Jumbotron Control" subHeading="You are looking at a Jumbotron!">
+
+	</bx:jumbotron>
+	<bx:container id="container1">
+		<bx:row id="row1">
+			<bx:column id="column1" styleClass="bg-info">
+				How do I use a Jumbotron?
+			</bx:column>
+			<bx:column id="column2">
+				<bx:prettyPrint id="prettyPrint1" pageName="ccJumbotron.xsp" languageHint="xml">
+				
+				</bx:prettyPrint>
+
+			</bx:column>
+		</bx:row>
+
+
+	</bx:container>
+
+</xp:view>

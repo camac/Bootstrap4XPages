@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<bx:jumbotron id="jumbotron1" 
+		heading="This is the Heading" 
+		subHeading="This is the Subheading">
+
+	</bx:jumbotron>
+</xp:view>

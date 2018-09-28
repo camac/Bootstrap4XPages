@@ -45,6 +45,12 @@ public class BootstrapJumbotronRenderer extends PanelRenderer {
 				w.write(subHeading);
 				w.endElement("p");
 			}
+			
+			if (!tron.getChildren().isEmpty()) {
+				w.startElement("hr", null);
+				w.writeAttribute("class", "my-4", null);
+				w.endElement("hr");
+			}
 
 		}
 

@@ -11,10 +11,14 @@ public class UIJumbotron extends UIPanelEx {
 	private String heading;
 	private String subHeading;
 
+	private static final String RENDERER_TYPE = "org.openntf.xsp.bootstrap.renderkit.html_extended.extlib.containers.BootstrapJumbotronRenderer";
+	
 	private Boolean fluid;
 
 	public UIJumbotron() {
 
+		setRendererType(RENDERER_TYPE);
+		
 	}
 
 	@Override
