@@ -67,7 +67,7 @@ public class BootstrapLibrary extends AbstractXspLibrary {
                 "org/openntf/xsp/bootstrap/config/bootstrap-extlib.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-select2.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-layout.xsp-config", // $NON-NLS-1$
-                "org/openntf/xsp/bootstrap/config/prettyprint.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-prettyprint.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-container.xsp-config", // $NON-NLS-1$
         	};
         List<BootstrapFragment> fragments = getBazaarFragments();
