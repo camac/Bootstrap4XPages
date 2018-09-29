@@ -13,7 +13,7 @@ public class UIFormGrid extends UIPanelEx {
 
 	public static final String STYLEKIT_FAMILY = "FormGrid";
 
-	public static final String RENDERER_TYPE = "com.ibm.xsp.extlibx.FormGrid";
+	public static final String RENDERER_TYPE = "org.openntf.xsp.bootstrap.FormGrid";
 	
 	public static final String LAYOUT_HORIZONTAL = "horizontal";
 	public static final String LAYOUT_INLINE = "inline";

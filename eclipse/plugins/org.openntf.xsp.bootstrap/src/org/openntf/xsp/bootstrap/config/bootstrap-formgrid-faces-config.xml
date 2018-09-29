@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+	<render-kit>
+		<renderer>
+			<component-family>javax.faces.Panel</component-family>
+			<renderer-type>org.openntf.xsp.bootstrap.FormGrid</renderer-type>
+			<renderer-class>org.openntf.xsp.bootstrap.renderkit.html_extended.extlib.layout.FormGridRenderer</renderer-class>
+		</renderer>
+	</render-kit>
+</faces-config>
