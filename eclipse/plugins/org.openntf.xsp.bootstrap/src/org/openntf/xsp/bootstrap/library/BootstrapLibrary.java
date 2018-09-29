@@ -66,6 +66,7 @@ public class BootstrapLibrary extends AbstractXspLibrary {
                 "org/openntf/xsp/bootstrap/config/bootstrap-actions.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-container.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-extlib.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-formgrid.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-layout.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-mastercheckbox.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-prettyprint.xsp-config", // $NON-NLS-1$
@@ -87,7 +88,8 @@ public class BootstrapLibrary extends AbstractXspLibrary {
         String[] files = new String[] {
                 "org/openntf/xsp/bootstrap/config/bootstrap-container-faces-config.xml", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-core-faces-config.xml", // $NON-NLS-1$
-        		"org/openntf/xsp/bootstrap/config/bootstrap-faces-config.xml", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-faces-config.xml", // $NON-NLS-1$
+        		"org/openntf/xsp/bootstrap/config/bootstrap-formgrid-faces-config.xml", // $NON-NLS-1$
         		"org/openntf/xsp/bootstrap/config/bootstrap-mastercheckbox-faces-config.xml", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-select2-faces-config.xml", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-table-faces-config.xml", // $NON-NLS-1$
