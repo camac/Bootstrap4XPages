@@ -72,7 +72,7 @@
 			<tag-name>masterCheckBox</tag-name>
 			<designer-extension>
 				<in-palette>true</in-palette>
-				<category>Core</category>
+				<category>Bootstrap Core Controls</category>
 			</designer-extension>
 		</component-extension>
 	</component>
@@ -101,7 +101,7 @@
 			<tag-name>slaveCheckBox</tag-name>
 			<designer-extension>
 				<in-palette>true</in-palette>
-				<category>Core</category>
+				<category>Bootstrap Core Controls</category>
 			</designer-extension>
 		</component-extension>
 	</component>

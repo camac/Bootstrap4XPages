@@ -63,12 +63,17 @@ public class BootstrapLibrary extends AbstractXspLibrary {
     @Override
 	public String[] getXspConfigFiles() {
         String[] files = new String[] {
-                "org/openntf/xsp/bootstrap/config/bootstrap.xsp-config", // $NON-NLS-1$
-                "org/openntf/xsp/bootstrap/config/bootstrap-extlib.xsp-config", // $NON-NLS-1$
-                "org/openntf/xsp/bootstrap/config/bootstrap-select2.xsp-config", // $NON-NLS-1$
-                "org/openntf/xsp/bootstrap/config/bootstrap-layout.xsp-config", // $NON-NLS-1$
-                "org/openntf/xsp/bootstrap/config/bootstrap-prettyprint.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-actions.xsp-config", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-container.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-extlib.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-layout.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-mastercheckbox.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-prettyprint.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-select2.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-table.xsp-config", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap.xsp-config", // $NON-NLS-1$
+
+
         	};
         List<BootstrapFragment> fragments = getBazaarFragments();
         for( BootstrapFragment fragment: fragments) {
@@ -80,9 +85,12 @@ public class BootstrapLibrary extends AbstractXspLibrary {
     @Override
 	public String[] getFacesConfigFiles() {
         String[] files = new String[] {
-                "org/openntf/xsp/bootstrap/config/bootstrap-faces-config.xml", // $NON-NLS-1$
-                "org/openntf/xsp/bootstrap/config/bootstrap-select2-faces-config.xml", // $NON-NLS-1$
                 "org/openntf/xsp/bootstrap/config/bootstrap-container-faces-config.xml", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-core-faces-config.xml", // $NON-NLS-1$
+        		"org/openntf/xsp/bootstrap/config/bootstrap-faces-config.xml", // $NON-NLS-1$
+        		"org/openntf/xsp/bootstrap/config/bootstrap-mastercheckbox-faces-config.xml", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-select2-faces-config.xml", // $NON-NLS-1$
+                "org/openntf/xsp/bootstrap/config/bootstrap-table-faces-config.xml", // $NON-NLS-1$
         	};
         List<BootstrapFragment> fragments = getBazaarFragments();
         for( BootstrapFragment fragment: fragments) {
