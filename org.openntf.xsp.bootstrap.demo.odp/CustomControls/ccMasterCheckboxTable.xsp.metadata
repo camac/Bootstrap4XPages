@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.8" replicaid="CA2582E90043BAE4" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1ae" sequence="10" unid="5C93B08637AB31A2CA25831700214C65">
+<created><datetime>20180929T160342,45+10</datetime></created>
+<modified><datetime>20180929T161322,10+10</datetime></modified>
+<revised><datetime>20180929T161322,09+10</datetime></revised>
+<lastaccessed><datetime>20180929T161322,10+10</datetime></lastaccessed>
+<addedtofile><datetime>20180929T160342,46+10</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Cameron Gregor/O=JORD Engineers</name></updatedby>
+<wassignedby><name>CN=Cameron Gregor/O=JORD Engineers</name></wassignedby>
+<item name="$TITLE"><text>ccMasterCheckboxTable.xsp</text></item>
+<item name="$Flags"><text>gC~4;</text></item>
+
+
+
+
+<item name="$FileNames" sign="true"><text>ccMasterCheckboxTable.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5</text></item>
+
+
+
+
+</note>

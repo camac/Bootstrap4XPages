@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<xc:ccMainNavBar></xc:ccMainNavBar>
+
+	<bx:jumbotron id="jumbotron1" heading="Dialog Actions">
+		Are you fed up with having to use SSJS to open and close Dialogs?
+		<br />
+		Then why not try these Simple Actions!
+
+	</bx:jumbotron>
+
+	<bx:container>
+		<bx:row>
+			<bx:column>
+
+				<h3>Open Dialog</h3>
+				<p>
+					The
+					<strong>Dialog Action</strong>
+					simple action allows you to easily close or open a dialog
+				</p>
+
+				<xc:ccDialogAction></xc:ccDialogAction>
+
+				<h5>XPage Markup</h5>
+				<bx:prettyPrint id="prettyPrint1" pageName="ccDialogAction.xsp"></bx:prettyPrint>
+
+			</bx:column>
+		</bx:row>
+		<bx:row>
+			<bx:column>
+				<h3>Open Tootip Dialog</h3>
+				<p>
+					The
+					<strong>Dialog Action</strong>
+					simple action allows you to easily close or open a dialog
+				</p>
+
+				<xc:ccOpenTooltipDialog></xc:ccOpenTooltipDialog>
+
+				<h5>XPage Markup</h5>
+				<bx:prettyPrint id="prettyPrint2" pageName="ccOpenTooltipDialog.xsp"></bx:prettyPrint>
+
+			</bx:column>
+		</bx:row>
+
+	</bx:container>
+
+
+</xp:view>

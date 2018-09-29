@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<style>tr.selected td { background-color: #5bacf3; color: white; }</style>
+	<xp:table styleClass="table">
+		<xp:this.facets>
+			<xp:tr xp:key="thead">
+				<bx:th>
+					<bx:masterCheckBox id="masterCheckBox1" parentSelectorClick="tr" parentSelectorStyleClass="tr" parentStyleClassChecked="selected"
+						value="#{requestScope.burgercontents}">
+					</bx:masterCheckBox>
+				</bx:th>
+				<bx:th>Topping</bx:th>
+			</xp:tr>
+		</xp:this.facets>
+		<xp:repeat id="repeat1" rows="30" value="#{javascript:
+		return ['Bacon', 'Egg', 'Pineapple', 'Lettuce', 'Onion', 'Beetroot']}" var="ingredient">
+			<xp:tr>
+				<xp:td>
+					<bx:slaveCheckBox id="slaveCheckBox4" checkedValue="#{ingredient}" master="masterCheckBox1"></bx:slaveCheckBox>
+				</xp:td>
+				<xp:td>
+					<xp:text escape="true" id="computedField1" value="#{ingredient}"></xp:text>
+				</xp:td>
+			</xp:tr>
+		</xp:repeat>
+	</xp:table>
+	<xp:button value="Submit" id="button2">
+		<xp:eventHandler event="onclick" submit="true" refreshMode="complete"></xp:eventHandler>
+	</xp:button>
+	<xp:text escape="true" id="computedField2" value="#{requestScope.burgercontents}"></xp:text>
+
+
+</xp:view>

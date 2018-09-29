@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<style>div.wrapper {padding: 5px;} div.selected { background-color: #5bacf3; color: white; }</style>
+
+	<xp:div>
+		<xp:div>
+			<xp:span style="display: inline-block; vertical-align: middle;">
+				<bx:masterCheckBox id="masterCheckBox2" parentSelectorClick="div.wrapper" parentSelectorStyleClass="div.wrapper" parentStyleClassChecked="selected"
+					value="#{requestScope.burgercontents2}">
+				</bx:masterCheckBox>
+
+			</xp:span>
+			<xp:span>
+				<xp:text escape="true" id="computedField1" value="Toppings"></xp:text>
+			</xp:span>
+
+		</xp:div>
+		<xp:repeat id="repeat2" rows="30" value="#{javascript: return ['Bacon', 'Egg', 'Pineapple', 'Lettuce', 'Onion', 'Beetroot']}" var="ingredient">
+			<xp:div styleClass="wrapper">
+				<xp:span style="display: inline-block; vertical-align: middle;">
+					<bx:slaveCheckBox id="slaveCheckBox1" checkedValue="#{ingredient}" master="masterCheckBox2"></bx:slaveCheckBox>
+				</xp:span>
+				<xp:span>
+					<xp:text escape="true" id="computedField3" value="#{ingredient}"></xp:text>
+				</xp:span>
+			</xp:div>
+		</xp:repeat>
+	</xp:div>
+	<xp:button value="Submit" id="button1">
+		<xp:eventHandler event="onclick" submit="true" refreshMode="complete"></xp:eventHandler>
+	</xp:button>
+	<hr></hr>
+	<xp:text escape="true" id="computedField4" value="#{requestScope.burgercontents2}"></xp:text>
+
+
+</xp:view>

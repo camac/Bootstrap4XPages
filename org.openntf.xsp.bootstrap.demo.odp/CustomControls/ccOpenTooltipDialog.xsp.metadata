@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.8" replicaid="CA2582E90043BAE4" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1ba" sequence="9" unid="D23166E55A689C07CA2583170021D1EB">
+<created><datetime>20180929T160924,27+10</datetime></created>
+<modified><datetime>20180929T161336,41+10</datetime></modified>
+<revised><datetime>20180929T161336,40+10</datetime></revised>
+<lastaccessed><datetime>20180929T161336,41+10</datetime></lastaccessed>
+<addedtofile><datetime>20180929T160924,28+10</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Cameron Gregor/O=JORD Engineers</name></updatedby>
+<wassignedby><name>CN=Cameron Gregor/O=JORD Engineers</name></wassignedby>
+<item name="$TITLE"><text>ccOpenTooltipDialog.xsp</text></item>
+<item name="$Flags"><text>gC~4;</text></item>
+
+
+
+
+<item name="$FileNames" sign="true"><text>ccOpenTooltipDialog.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5.1</text></item>
+
+
+
+
+</note>

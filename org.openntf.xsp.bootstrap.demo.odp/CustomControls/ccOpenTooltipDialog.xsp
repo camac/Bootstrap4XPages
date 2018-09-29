@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<xp:button value="Open Tooltip Dialog with this button as target" id="button2">
+		<xp:eventHandler event="onclick" submit="false">
+			<xp:this.script>
+				<bx:openTooltipDialog dialogId="tooltipDialog1" targetId="button2"></bx:openTooltipDialog>
+			</xp:this.script>
+		</xp:eventHandler>
+	</xp:button>
+
+	<xe:tooltipDialog id="tooltipDialog1">
+		<xe:dialogContent id="dialogContent2">I am a tooltip dialog</xe:dialogContent>
+	</xe:tooltipDialog>
+
+</xp:view>

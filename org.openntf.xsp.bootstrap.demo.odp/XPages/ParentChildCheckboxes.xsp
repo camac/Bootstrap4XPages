@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+
+	<xc:ccMainNavBar></xc:ccMainNavBar>
+
+	<bx:jumbotron id="jumbotron1" heading="Master Checkbox" subHeading="The Master checkbox control provides an easier way to do Multiple checkbox selection when using repeats"></bx:jumbotron>
+
+	<bx:container>
+		<bx:row>
+			<bx:column>
+				<h4>Table-based Example</h4>
+				<p>In this example, the 'slave' checkboxes are placed within rows of a table</p>
+				<xc:ccMasterCheckboxTable></xc:ccMasterCheckboxTable>
+			</bx:column>
+		</bx:row>
+		<bx:row>
+			<bx:column>
+				<bx:prettyPrint id="prettyPrint1" pageName="ccMasterCheckboxTable.xsp"></bx:prettyPrint>
+			</bx:column>
+		</bx:row>
+
+
+		<bx:row>
+			<h4>Div-based Example</h4>
+			<p>In this example, the 'slave' checkboxes are placed within rows of a table</p>
+			<xc:ccMasterCheckboxDiv></xc:ccMasterCheckboxDiv>
+		</bx:row>
+		<bx:row>
+			<bx:prettyPrint id="prettyPrint2" pageName="ccMasterCheckboxDiv.xsp"></bx:prettyPrint>
+		</bx:row>
+
+	</bx:container>
+
+
+</xp:view>

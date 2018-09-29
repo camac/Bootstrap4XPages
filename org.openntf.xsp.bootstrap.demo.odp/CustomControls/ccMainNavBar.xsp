@@ -10,6 +10,8 @@
 				<xe:this.children>
 					<xe:pageTreeNode label="Jumbotron" page="/Jumbotron.xsp"></xe:pageTreeNode>
 					<xe:pageTreeNode label="Pretty Print" page="/PrettyPrint.xsp"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Dialog Actions" page="/DialogActions.xsp"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Parent Child Checkboxes" page="/ParentChildCheckboxes.xsp"></xe:pageTreeNode>
 				</xe:this.children>
 			</xe:pageTreeNode>
 
