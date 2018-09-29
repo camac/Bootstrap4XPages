@@ -19,7 +19,7 @@
 			<tag-name>formGrid</tag-name>
 			<designer-extension>
 				<in-palette>true</in-palette>
-				<category>Layout</category>
+				<category>Bootstrap Layout</category>
 			</designer-extension>
 		</component-extension>
 		<property>

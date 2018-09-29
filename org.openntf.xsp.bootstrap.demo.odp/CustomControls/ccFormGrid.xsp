@@ -15,7 +15,9 @@
 		<xp:inputText id="inputText2" value="#{viewScope.lastName}"></xp:inputText>
 
 	</bx:formGrid>
+
 	<xp:button value="Submit" id="button1">
 		<xp:eventHandler event="onclick" submit="true" refreshMode="complete"></xp:eventHandler>
 	</xp:button>
+	
 </xp:view>
