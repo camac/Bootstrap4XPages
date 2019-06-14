@@ -4,3 +4,4 @@ updateSite/org.openntf.xsp.bootstrap.updateSite/features
 updateSite/org.openntf.xsp.bootstrap.updateSite/plugins
 designerUpdateSite/
 *.class
+rebel.xml

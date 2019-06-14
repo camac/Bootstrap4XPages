@@ -18,6 +18,7 @@ package org.openntf.xsp.bootstrap.library;
 
 import org.eclipse.core.runtime.Plugin;
 import org.openntf.xsp.bootstrap.minifier.BootstrapLoader;
+import org.osgi.framework.BundleContext;
 
 import com.ibm.xsp.extlib.minifier.ExtLibLoaderExtension;
 
@@ -35,5 +36,19 @@ public class BootstrapActivator extends Plugin {
 		instance = this;
 		
         ExtLibLoaderExtension.getExtensions().add(new BootstrapLoader());
+	}
+
+	@Override
+	public void start(BundleContext context) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Bootstrap Plugin started");
+		super.start(context);
+	}
+
+	@Override
+	public void stop(BundleContext context) throws Exception {
+
+		System.out.println("Bootstrap Plugin Stopped");
+		super.stop(context);
 	}
 }
